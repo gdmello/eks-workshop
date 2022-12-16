@@ -1,0 +1,27 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1USXdNakU1TVRrd00xb1hEVE15TVRFeU9URTVNVGt3TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGd0CjlXTDJlTm9mQmk5clVjczJoYVF1dzNiOXVxU2E1MlhFK1RCU3V6eHV3cUhLQ0kxYUdqcEN3aTcrK3NsVkw3OW4KdFVvVWQ4SUZkTFJwU0JiNS9aMEJXZEdEbEY1UWxHU2tOVlNDMUh2WlhzYSt0dTVSRTloUjd3Q01YblI5aWZHUApsMzNYRXgzZDlIWktpdmZ4cmlROUJJNmx1cDNGb0M1VVFDRWlHTjJyODNvSThoMk5nVEhUdGRWV0lmUEhUN0xDCjNjbHhURUQ0UWhwR3AvS3JzMlloTElFeExTQ2RxQkVIZUZJR1hMKy9kYmpmTGlWQ3ZjRTYvY1NDOS9vc0lMbHoKVXNNc1FFczhpM1cxYlRuUTlkZ3psL2ZmYmhreDVjb2lPSVl3dGl0eFBtTEpLZytHU0F6SXVrSEw3YUpmUmFESQpFaEQ4aGRlK1hlc1BkZVVxeUI4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZIMUVxUEFDMGF6WS9abFphcFMvdTBFa05hUFJNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDeTNZSnozRkFJZzc1dnBMN3hQb0pyNGlTOGg4ZUh4Yyt1b2ZoME5jTjdIbzNueE8wbgpGN3NwSU42SGIvVVJ1dm1qY1ljbm5icWN1ZUtRUnVvL0JXeXVDaFRSNXNwc2NiYWFYUVdHSHVPa1VDRFM0TXRGCis3T3ZZVVBZL0lXUENFZ1crMmZtdUNSVjV5ekhyb3VkcE5MZnFaNXN0Yi9BNlA4c3dieTdneUQxalBodGJLaC8Kcm1VK3RudWIzN0NyZjdQLzhSWDBjcjNHUUsvRlZkU3B2NHd2WE4zM1FkZGhrWjVLRGF2L3J2SHRiT3Uwbnc5Uwp2dG1Hc015bUVPRkZ0Tm9MOXcyRCt0WWU3Q0xXMmhEMUtUTXlibHIybjl0UCtkUlV3aC9XbHk2YU5ENW9EbHZUClJiSHpmSUwxeUw1YU5WN0VycXk4SE50cDViUVA5UjRYeE1tRgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://E80A27E8D7A73FF6F1CEFE0C8E1B4834.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+contexts:
+- context:
+    cluster: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+    user: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+  name: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+current-context: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:us-east-1:1***MASKED***49:cluster/ekswork-eksctl
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - ekswork-eksctl
+      command: aws
