@@ -39,3 +39,9 @@ Ensure that the aws cli is [configured](https://docs.aws.amazon.com/cli/latest/u
     ip-192-168-4-220.ec2.internal   Ready    <none>   18m   v1.21.14-eks-fb459a0
     ip-192-168-55-8.ec2.internal    Ready    <none>   18m   v1.21.14-eks-fb459a0
     ip-192-168-83-82.ec2.internal   Ready    <none>   18m   v1.21.14-eks-fb459a0
+
+## Decode Authorization Messages
+Decode any encoded messages with [this](https://docs.aws.amazon.com/cli/latest/reference/sts/decode-authorization-message.html) cli command-
+
+    aws sts decode-authorization-message --encoded-message <ENCODED_MESSAGE>
+
