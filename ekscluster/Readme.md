@@ -1,5 +1,5 @@
-chmod u+rwx setup.sh key.sh
-
+# EKS Learning
+Based on [EKS workshop](https://www.eksworkshop.com/beginner/).
 
 ## Setup AWS cli 
 
